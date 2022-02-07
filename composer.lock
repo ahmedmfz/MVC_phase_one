@@ -1,0 +1,53 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "4c510dac5af2fe9475bf00b08fd5b4b0",
+    "packages": [
+        {
+            "name": "ahmedmahfouzbackend/database",
+            "version": "v3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ahmedmfz/Database_package.git",
+                "reference": "5a5c0e145ee1e3f84a93c77b2dd03b9ec594145a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ahmedmfz/Database_package/zipball/5a5c0e145ee1e3f84a93c77b2dd03b9ec594145a",
+                "reference": "5a5c0e145ee1e3f84a93c77b2dd03b9ec594145a",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ahmedmahfouzbackend\\Database\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "ahmed mahfouz",
+                    "email": "ahmedmahfouz2060@gmail.com"
+                }
+            ],
+            "description": "database as querybuilder",
+            "support": {
+                "issues": "https://github.com/ahmedmfz/Database_package/issues",
+                "source": "https://github.com/ahmedmfz/Database_package/tree/v3"
+            },
+            "time": "2022-02-06T19:04:10+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}

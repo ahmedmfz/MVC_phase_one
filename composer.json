@@ -1,0 +1,22 @@
+{
+    "name": "ahmedmahfouz/mvc",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Ahmedmahfouz\\Mvc\\": "src/"
+        },
+        "files":[
+            "src/core/helper.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "ahmed mahfouz",
+            "email": "ahmedmahfouz2060@gmail.com"
+        }
+    ],
+    
+    "require": {
+        "ahmedmahfouzbackend/database": "^3.0"
+    }
+}
