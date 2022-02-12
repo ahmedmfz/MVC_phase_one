@@ -5,9 +5,9 @@ namespace Ahmedmahfouz\Mvc\controllers;
 use Ahmedmahfouz\Mvc\core\View;
 
 
-class HomeController extends Controller{
+class ProductController{
 
     public function index(){
-      View::redirect('home');
-     }
+        View::redirect('product'.DS.'index');
+    }
 }

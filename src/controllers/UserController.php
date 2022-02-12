@@ -2,19 +2,19 @@
 
 namespace Ahmedmahfouz\Mvc\controllers;
 
+use Ahmedmahfouz\Mvc\core\View;
 use Ahmedmahfouz\Mvc\models\User;
 
 
 class UserController extends Controller {
 
     public function index(){
-        $user = new User;
-        $data = $user->getUsers();
-        $data = json_encode($data);
-        $data = json_decode( $data , true);
 
-        
-        $this->view('user/index',['data'=>$data]);
+        $user = new User;
+        $data['user'] = $user->getUsers();
+        // $data['title'] = "User page";
+       
+        View::redirect('user\index',$data);
     }
 
     public function add(){

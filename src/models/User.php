@@ -9,6 +9,7 @@ class User{
     public function getUsers(){
         return registry::get('db')->table("category")->getAll();
     }
+
     public function insertUser($data){
         return registry::get('db')->table("category")->insert($data);
     }

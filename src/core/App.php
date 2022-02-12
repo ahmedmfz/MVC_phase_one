@@ -2,7 +2,6 @@
 
 namespace Ahmedmahfouz\Mvc\core;
 
-use Ahmedmahfouz\Mvc\controllers\Controller;
 
 class App {
 
@@ -24,8 +23,8 @@ class App {
         $url = $_SERVER['QUERY_STRING'];
         $url = explode("/",$url);
 
-        $this->controller = empty($url[0]) ? 'HomeController': $url[0];
-        $this->method     = empty($url[1]) ? 'index' : $url[1] ;
+        $this->controller = !empty($url[0]) ? ucwords($url[0])."Controller" :'HomeController';
+        $this->method     = !empty($url[1]) ?  $url[1] : 'index'  ;
 
         unset($url[0],$url[1]);
 

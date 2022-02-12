@@ -10,8 +10,4 @@ class Controller {
         echo "This method : ($name) Not found";
     }
 
-    protected function view($path , $data = [])
-    {
-        require "../src/views/".$path.".php";
-    }
 }
